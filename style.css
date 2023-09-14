@@ -9,6 +9,27 @@
     box-sizing: border-box;
 }
 
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button-row button {
+    padding: 8px 20px;
+    font-size: 16px;
+    color: #f64d4d;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.button-row button:hover {
+    padding: 8px 36px;
+    letter-spacing: 3px;
+}
 
 
 /* Responsive image */

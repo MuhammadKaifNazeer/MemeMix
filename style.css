@@ -34,12 +34,15 @@
 
 /* Responsive image */
 .meme-generator img {
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%;
+    height: auto; */
+    height: 430px;
+    object-fit: cover;
+
 }
 
 /* Button styles with responsiveness */
-.meme-generator .generate-meme-btn {
+.meme-generator .logo {
     padding: 8px 20px;
     border: none;
     border-left: 4px solid #222;
@@ -53,7 +56,7 @@
 }
 
 /* Responsive hover state */
-.meme-generator .generate-meme-btn:hover {
+.meme-generator .logo:hover {
     padding: 8px 36px;
     border-left: 8px solid #222;
     border-left: 8px solid #222;
@@ -67,11 +70,17 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-    .meme-generator .generate-meme-btn {
+    .meme-generator .logo {
         font-size: 14px;
     }
     
-    .meme-generator .generate-meme-btn:hover {
+    .meme-generator .logo:hover {
         padding: 8px 20px;
+    }
+}
+@media (max-width: 600px) {
+    .meme-generator img {
+        max-width: 100%;
+        height: auto;
     }
 }

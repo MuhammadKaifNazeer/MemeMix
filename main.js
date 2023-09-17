@@ -14,7 +14,7 @@ const updateDetails = (url, title, author) => {
 }
 
 const fetchMeme = () => {
-    fetch("https://meme-api.com/gimme/wholesomememes")
+    fetch("https://meme-api.com/gimme/funny")
         .then((response) => response.json())
         .then(data => {
             memes.push(data);
